@@ -8,7 +8,8 @@ const TrackCard = ({ heading, description }) => {
       };
     
   return (
-    <div className=" h-64 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity max-w-xs" style={cardStyle}>
+    <div className="duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85]
+     hover:!scale-100 cursor-pointer p-8 rounded-xl mix-blend-luminosity max-w-xs" style={cardStyle}>
       <div className="flex justify-center">
         <div className="w-20 h-20">
           <img

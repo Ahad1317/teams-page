@@ -1,7 +1,6 @@
 import React from 'react';
 import TeamCard from './components/TeamCard';
 import universities from './constants/universities';
-import mentorsData from './constants/mentor';
 import Tracks from './components/Tracks';
 
 const App = () => {
