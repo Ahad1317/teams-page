@@ -1,5 +1,4 @@
 import React from 'react';
-
 import cambridgeImage from '../images/cambridge.png';
 import harvardImage from '../images/harvard.png';
 import uclaImage from '../images/ucla.jpg';
@@ -10,7 +9,7 @@ import hopkins from '../images/hopkins.png';
 import michigan from '../images/michigan.png';
 import illinois from '../images/illinois.jpg';
 import humboldt from '../images/humboldt.jpg';
-import alld from "../images/edinberg.png"
+import alld from "../images/edinberg.png";
 
 const universityImages = {
   "Cambridge University": cambridgeImage,
@@ -30,12 +29,19 @@ const TeamCard = ({ university }) => {
   const imageUrl = universityImages[university];
 
   const cardStyle = {
-    width: '100%', // Card takes full width on all screens
-    maxWidth: '300px', // Limit card width
-    margin: '0 auto', // Center the card horizontally
-    marginBottom: '20px', // Add spacing between cards
+    width: '100%',
+    maxWidth: '300px',
+    margin: '0 auto',
+    marginBottom: '20px',
     transition: 'transform 0.3s, box-shadow 0.3s',
+    background: 'linear-gradient(to bottom, #F5F5F5, #1E90FF, #000000)',
+    borderRadius: '0.5rem',
+    padding: '1rem', 
   };
+  
+  const colors = {
+    background: 'linear-gradient(to bottom, #000000, #1E90FF, #F5F5F5)'
+  }
 
   const imageStyle = {
     height: '160px',
@@ -57,11 +63,11 @@ const TeamCard = ({ university }) => {
   return (
     <div
       className="group relative p-4"
-      style={cardStyle}
+      
       onMouseEnter={handleCardHover}
       onMouseLeave={handleCardLeave}
     >
-      <div className="bg-blue-400 shadow-md p-6 rounded-lg">
+      <div className="shadow-md p-6 rounded-lg" style={colors}>
         <img src={imageUrl} alt={university} style={imageStyle} />
         <p className="text-center text-lg font-semibold">{university}</p>
       </div>
@@ -70,4 +76,3 @@ const TeamCard = ({ university }) => {
 };
 
 export default TeamCard;
- 

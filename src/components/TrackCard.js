@@ -3,7 +3,7 @@ import mentor from '../images/elonmusk.png';
 
 const TrackCard = ({ heading, description }) => {
     const cardStyle = {
-        background: 'linear-gradient(to right, #87CEEB, #1E90FF)',
+      background: 'linear-gradient(to bottom, #F5F5F5, #1E90FF, #000000)',
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06)'
       };
     
@@ -22,7 +22,7 @@ const TrackCard = ({ heading, description }) => {
         </div>
       </div>
       <div className="uppercase text-xl font-bold">{heading}</div>
-      <p className="text-md leading-7 my-3 font-semibold  text-blue-950">
+      <p className="text-md leading-7 my-3 font-semibold  text-gray-300">
         {description}
       </p>
       <button className="bg-blue-950 py-2.5 px-8 rounded-full hover:bg-blue-800 text-white">
