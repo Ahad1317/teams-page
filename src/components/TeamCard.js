@@ -28,22 +28,20 @@ const universityImages = {
 
 const TeamCard = ({ university }) => {
   const imageUrl = universityImages[university];
+
   const cardStyle = {
-    width: '300px',
+    width: '100%', // Card takes full width on all screens
+    maxWidth: '300px', // Limit card width
+    margin: '0 auto', // Center the card horizontally
+    marginBottom: '20px', // Add spacing between cards
     transition: 'transform 0.3s, box-shadow 0.3s',
   };
 
   const imageStyle = {
-    height: '160px', // Adjust the height as needed
+    height: '160px',
     width: '100%',
     objectFit: 'cover',
     borderRadius: '0.5rem',
-  };
-
-  const universityStyle = {
-    textAlign: 'center',
-    fontWeight: 'bold',
-    fontSize: '1rem',
   };
 
   const handleCardHover = (event) => {
