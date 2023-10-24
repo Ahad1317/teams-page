@@ -1,5 +1,6 @@
 <h1>Teams-Page</h1>
-<h2>Host : https://teams-page-black.vercel.app/</h2>
+<h2>  Made this for fun xd
+  Host : https://teams-page-black.vercel.app/</h2>
 <h3>Screenshots
 <ul>
   <li>Laptop View</li>
